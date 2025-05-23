@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head> <title>Mount caramel Book club</title>
-<link rel="stylesheet" href="style.css" type="text/css">
-
-<head>
-
-
-
-
-
-
+</head>
 
 <body>
-    <div class="grid container">
-    <!--heading-->
-    <header style="background-color: cadetblue;">
-        <h1>Mount Caramel Book club</h1>
-        <img src="" alt="Row of books" width="">
-
-    </header>
-    <!--navbar-->
-    <ul>
-        <li><a href="#">Home</a></li>
-         <li><a href="#">online resorcse</a></li>
-          <li><a href="#">reading groups</a></li>
-           <li><a href="#">contact us</a></li>
+    <div class="grid-container">
 
 
-           <!--intro-->
-           <div id="into"></div>
-           <h2>welcome to mount caramel book club</h2>
-           <p>The Mount Caramel Book Club is an online community of book readers in Mount Caramel school.</p>
+        <div class="griditem1">header</div>
+        <div class="griditem2">menu</div>
+        <div class="griditem3">main</div>
+        <div class="griditem4">footer</div>
+
+
+
+
     </div>
 
-<!---main section-->
-<div id="main section"></div>
 
 
 
 
 
 </body>
+
 </html>
+
+<style>
+    .griditem1 {
+        grid-area: header;
+    }
+
+    .griditem2 {
+        grid-area: menu;
+    }
+
+    .griditem3 {
+        grid-area: main;
+    }
+
+    .griditem4 {
+        grid-area: footer;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-areas: 'header header header header header'
+            'menu main main main main'
+            'menu footer footer footer footer';
+            background-color: seagreen;
+            padding: 10px;
+    }
+</style>
